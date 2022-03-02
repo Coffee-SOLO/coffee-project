@@ -1,13 +1,23 @@
 "use strict"
 
-function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
+// function renderCoffee(coffee) {
+//     var html = '<div class="coffee">';
+//     html += '<span class="d-none">' + coffee.id + '</span>';
+//     html += '<h1>' + coffee.name + '</h1>';
+//     html += '<p>' + coffee.roast + '</p>';
+//     html += '<div>';
+//
+//     return html;
+// }
 
+function renderCoffee(coffee){
+    var html = '<div>';
+    html += '<span class="d-none">' + coffee.id + '</span>';
+    html += '<h1>' + coffee.name + '</h1>';
+    html += '<p>' + coffee.roast + '</p>';
+    html += '<div>';
     return html;
+
 }
 
 function renderCoffees(coffees) {
